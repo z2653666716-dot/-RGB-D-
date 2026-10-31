@@ -1,0 +1,172 @@
+{
+  "summary_by_method": {
+    "sensor=0.005|motion=0.0000m|raw|geometry_candidate": {
+      "attempts": 20,
+      "successes": 18,
+      "failures": {
+        "not_lifted_enough": 1,
+        "object_dropped_to_low_height": 1
+      },
+      "success_rate": 0.9,
+      "final_position_rmse_m": 0.01050684461446103,
+      "execution_target_rmse_m": 0.01050684461446103
+    },
+    "sensor=0.005|motion=0.0000m|relative_kalman|geometry_candidate": {
+      "attempts": 20,
+      "successes": 20,
+      "failures": {},
+      "success_rate": 1.0,
+      "final_position_rmse_m": 0.008381088052502862,
+      "execution_target_rmse_m": 0.008381088052502862
+    },
+    "sensor=0.005|motion=0.0030m|raw|geometry_candidate": {
+      "attempts": 20,
+      "successes": 16,
+      "failures": {
+        "not_lifted_enough": 1,
+        "object_dropped_after_lift": 1,
+        "forbidden_collision": 2
+      },
+      "success_rate": 0.8,
+      "final_position_rmse_m": 0.01050684461446103,
+      "execution_target_rmse_m": 0.010507178692504006
+    },
+    "sensor=0.005|motion=0.0030m|relative_kalman|geometry_candidate": {
+      "attempts": 20,
+      "successes": 18,
+      "failures": {
+        "forbidden_collision": 2
+      },
+      "success_rate": 0.9,
+      "final_position_rmse_m": 0.008381088052502862,
+      "execution_target_rmse_m": 0.00900136668457841
+    },
+    "sensor=0.010|motion=0.0000m|raw|geometry_candidate": {
+      "attempts": 20,
+      "successes": 13,
+      "failures": {
+        "not_lifted_enough": 6,
+        "object_dropped_after_lift": 1
+      },
+      "success_rate": 0.65,
+      "final_position_rmse_m": 0.016458354781857372,
+      "execution_target_rmse_m": 0.016458354781857372
+    },
+    "sensor=0.010|motion=0.0000m|relative_kalman|geometry_candidate": {
+      "attempts": 20,
+      "successes": 19,
+      "failures": {
+        "object_dropped_after_lift": 1
+      },
+      "success_rate": 0.95,
+      "final_position_rmse_m": 0.009179679882896325,
+      "execution_target_rmse_m": 0.009179679882896325
+    },
+    "sensor=0.010|motion=0.0030m|raw|geometry_candidate": {
+      "attempts": 20,
+      "successes": 13,
+      "failures": {
+        "object_dropped_to_low_height": 2,
+        "not_lifted_enough": 5
+      },
+      "success_rate": 0.65,
+      "final_position_rmse_m": 0.016458354781857372,
+      "execution_target_rmse_m": 0.016001940814884128
+    },
+    "sensor=0.010|motion=0.0030m|relative_kalman|geometry_candidate": {
+      "attempts": 20,
+      "successes": 15,
+      "failures": {
+        "object_dropped_after_lift": 2,
+        "forbidden_collision": 3
+      },
+      "success_rate": 0.75,
+      "final_position_rmse_m": 0.009179679882896325,
+      "execution_target_rmse_m": 0.00953944863790981
+    }
+  },
+  "paired_observation_sequences_identical": {
+    "center_square__seed_4000__sensor_0p0050__motion_0p0000": true,
+    "center_square__seed_4000__sensor_0p0050__motion_0p0030": true,
+    "center_square__seed_4000__sensor_0p0100__motion_0p0000": true,
+    "center_square__seed_4000__sensor_0p0100__motion_0p0030": true,
+    "center_square__seed_4001__sensor_0p0050__motion_0p0000": true,
+    "center_square__seed_4001__sensor_0p0050__motion_0p0030": true,
+    "center_square__seed_4001__sensor_0p0100__motion_0p0000": true,
+    "center_square__seed_4001__sensor_0p0100__motion_0p0030": true,
+    "center_square__seed_4002__sensor_0p0050__motion_0p0000": true,
+    "center_square__seed_4002__sensor_0p0050__motion_0p0030": true,
+    "center_square__seed_4002__sensor_0p0100__motion_0p0000": true,
+    "center_square__seed_4002__sensor_0p0100__motion_0p0030": true,
+    "center_square__seed_4003__sensor_0p0050__motion_0p0000": true,
+    "center_square__seed_4003__sensor_0p0050__motion_0p0030": true,
+    "center_square__seed_4003__sensor_0p0100__motion_0p0000": true,
+    "center_square__seed_4003__sensor_0p0100__motion_0p0030": true,
+    "center_square__seed_4004__sensor_0p0050__motion_0p0000": true,
+    "center_square__seed_4004__sensor_0p0050__motion_0p0030": true,
+    "center_square__seed_4004__sensor_0p0100__motion_0p0000": true,
+    "center_square__seed_4004__sensor_0p0100__motion_0p0030": true,
+    "center_square__seed_4005__sensor_0p0050__motion_0p0000": true,
+    "center_square__seed_4005__sensor_0p0050__motion_0p0030": true,
+    "center_square__seed_4005__sensor_0p0100__motion_0p0000": true,
+    "center_square__seed_4005__sensor_0p0100__motion_0p0030": true,
+    "center_square__seed_4006__sensor_0p0050__motion_0p0000": true,
+    "center_square__seed_4006__sensor_0p0050__motion_0p0030": true,
+    "center_square__seed_4006__sensor_0p0100__motion_0p0000": true,
+    "center_square__seed_4006__sensor_0p0100__motion_0p0030": true,
+    "center_square__seed_4007__sensor_0p0050__motion_0p0000": true,
+    "center_square__seed_4007__sensor_0p0050__motion_0p0030": true,
+    "center_square__seed_4007__sensor_0p0100__motion_0p0000": true,
+    "center_square__seed_4007__sensor_0p0100__motion_0p0030": true,
+    "center_square__seed_4008__sensor_0p0050__motion_0p0000": true,
+    "center_square__seed_4008__sensor_0p0050__motion_0p0030": true,
+    "center_square__seed_4008__sensor_0p0100__motion_0p0000": true,
+    "center_square__seed_4008__sensor_0p0100__motion_0p0030": true,
+    "center_square__seed_4009__sensor_0p0050__motion_0p0000": true,
+    "center_square__seed_4009__sensor_0p0050__motion_0p0030": true,
+    "center_square__seed_4009__sensor_0p0100__motion_0p0000": true,
+    "center_square__seed_4009__sensor_0p0100__motion_0p0030": true,
+    "center_square__seed_4010__sensor_0p0050__motion_0p0000": true,
+    "center_square__seed_4010__sensor_0p0050__motion_0p0030": true,
+    "center_square__seed_4010__sensor_0p0100__motion_0p0000": true,
+    "center_square__seed_4010__sensor_0p0100__motion_0p0030": true,
+    "center_square__seed_4011__sensor_0p0050__motion_0p0000": true,
+    "center_square__seed_4011__sensor_0p0050__motion_0p0030": true,
+    "center_square__seed_4011__sensor_0p0100__motion_0p0000": true,
+    "center_square__seed_4011__sensor_0p0100__motion_0p0030": true,
+    "center_square__seed_4012__sensor_0p0050__motion_0p0000": true,
+    "center_square__seed_4012__sensor_0p0050__motion_0p0030": true,
+    "center_square__seed_4012__sensor_0p0100__motion_0p0000": true,
+    "center_square__seed_4012__sensor_0p0100__motion_0p0030": true,
+    "center_square__seed_4013__sensor_0p0050__motion_0p0000": true,
+    "center_square__seed_4013__sensor_0p0050__motion_0p0030": true,
+    "center_square__seed_4013__sensor_0p0100__motion_0p0000": true,
+    "center_square__seed_4013__sensor_0p0100__motion_0p0030": true,
+    "center_square__seed_4014__sensor_0p0050__motion_0p0000": true,
+    "center_square__seed_4014__sensor_0p0050__motion_0p0030": true,
+    "center_square__seed_4014__sensor_0p0100__motion_0p0000": true,
+    "center_square__seed_4014__sensor_0p0100__motion_0p0030": true,
+    "center_square__seed_4015__sensor_0p0050__motion_0p0000": true,
+    "center_square__seed_4015__sensor_0p0050__motion_0p0030": true,
+    "center_square__seed_4015__sensor_0p0100__motion_0p0000": true,
+    "center_square__seed_4015__sensor_0p0100__motion_0p0030": true,
+    "center_square__seed_4016__sensor_0p0050__motion_0p0000": true,
+    "center_square__seed_4016__sensor_0p0050__motion_0p0030": true,
+    "center_square__seed_4016__sensor_0p0100__motion_0p0000": true,
+    "center_square__seed_4016__sensor_0p0100__motion_0p0030": true,
+    "center_square__seed_4017__sensor_0p0050__motion_0p0000": true,
+    "center_square__seed_4017__sensor_0p0050__motion_0p0030": true,
+    "center_square__seed_4017__sensor_0p0100__motion_0p0000": true,
+    "center_square__seed_4017__sensor_0p0100__motion_0p0030": true,
+    "center_square__seed_4018__sensor_0p0050__motion_0p0000": true,
+    "center_square__seed_4018__sensor_0p0050__motion_0p0030": true,
+    "center_square__seed_4018__sensor_0p0100__motion_0p0000": true,
+    "center_square__seed_4018__sensor_0p0100__motion_0p0030": true,
+    "center_square__seed_4019__sensor_0p0050__motion_0p0000": true,
+    "center_square__seed_4019__sensor_0p0050__motion_0p0030": true,
+    "center_square__seed_4019__sensor_0p0100__motion_0p0000": true,
+    "center_square__seed_4019__sensor_0p0100__motion_0p0030": true
+  },
+  "trial_count": 160,
+  "runtime_error_count": 0
+}

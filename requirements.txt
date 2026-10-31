@@ -1,0 +1,6 @@
+# MuJoCo 的官方 Python 包和本项目直接使用的图像、图表及验证依赖固定在此处。
+numpy==1.26.4
+mujoco==3.3.7
+opencv-python==4.10.0.84
+matplotlib==3.9.2
+pytest==8.3.5

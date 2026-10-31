@@ -1,0 +1,123 @@
+{
+  "seed": 42,
+  "physics": {
+    "time_step_seconds": 0.004166666666666667,
+    "gravity_world_m_s2": [
+      0.0,
+      0.0,
+      -9.81
+    ],
+    "solver_iterations": 100,
+    "settle_steps": 720,
+    "stability_check_steps": 240,
+    "penetration_tolerance_m": 0.001
+  },
+  "table": {
+    "center_world_m": [
+      0.45,
+      0.0,
+      0.58
+    ],
+    "top_height_world_m": 0.6,
+    "half_size_m": [
+      0.55,
+      0.55,
+      0.02
+    ],
+    "leg_width_m": 0.05,
+    "leg_height_m": 0.56,
+    "color_rgba": [
+      0.43,
+      0.31,
+      0.2,
+      1.0
+    ]
+  },
+  "robot": {
+    "base_world_position_m": [
+      0.0,
+      0.0,
+      0.6
+    ],
+    "arm_joint_angles_rad": [
+      0.0,
+      0.0,
+      0.0,
+      -1.57079,
+      0.0,
+      1.57079,
+      -0.7853
+    ],
+    "gripper_finger_positions_m": [
+      0.04,
+      0.04
+    ],
+    "gripper_open_control": 255.0
+  },
+  "cube": {
+    "side_m": 0.05,
+    "mass_kg": 0.05,
+    "center_xy_world_m": [
+      0.72,
+      -0.22
+    ],
+    "spawn_clearance_m": 0.005,
+    "xy_jitter_m": 0.0,
+    "color_rgba": [
+      0.85,
+      0.05,
+      0.05,
+      1.0
+    ],
+    "friction": [
+      0.8,
+      0.005,
+      0.0001
+    ]
+  },
+  "camera": {
+    "name": "overhead_camera",
+    "width_px": 640,
+    "height_px": 480,
+    "position_world_m": [
+      0.5,
+      0.0,
+      1.65
+    ],
+    "vertical_fov_degrees": 60.0
+  },
+  "vision": {
+    "red_hue_ranges_0_to_179": [
+      [
+        0,
+        12
+      ],
+      [
+        170,
+        179
+      ]
+    ],
+    "minimum_saturation_0_to_255": 90,
+    "minimum_brightness_0_to_255": 45,
+    "morphology_kernel_px": 3,
+    "minimum_contour_area_px": 80.0,
+    "maximum_contour_area_fraction": 0.08,
+    "accepted_square_aspect_range": [
+      0.4,
+      1.6
+    ],
+    "center_depth_region_fraction": 0.5,
+    "minimum_valid_depth_fraction": 0.7,
+    "maximum_top_height_error_m": 0.035,
+    "workspace_bounds_xy_world_m": {
+      "x": [
+        0.05,
+        0.95
+      ],
+      "y": [
+        -0.5,
+        0.5
+      ]
+    }
+  }
+}

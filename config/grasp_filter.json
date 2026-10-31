@@ -1,0 +1,5 @@
+{
+  "lift_distance_m": 0.12,
+  "path_samples_per_segment": 12,
+  "allowed_fingertip_object_contact_during_descent_and_lift": true
+}

@@ -1,0 +1,77 @@
+{
+  "experiment_name": "relative_grasp_kalman_camera_motion_pilot",
+  "formal_statistics": false,
+  "protocol_version": "2.0",
+  "protocol_note": "Small paired pilot: camera-frame XYZ point noise, known center height, and separate world-frame XYZ execution-target offsets. Endpoint proxy only; no in-motion correction. All methods share identical samples.",
+  "development_seeds": [
+    42,
+    43
+  ],
+  "scene_config_path": "config/scene.json",
+  "evaluation_config_path": "config/grasp_evaluation.json",
+  "geometry_config_path": "config/geometry.json",
+  "planner_config_path": "config/grasp_planner.json",
+  "filter_config_path": "config/grasp_filter.json",
+  "estimator_config_path": "config/experiment.json",
+  "output_directory": "outputs/large_validation/relative_grasp_kalman_camera_motion_pilot",
+  "test_seeds": [
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009
+  ],
+  "observation_frame_count": 10,
+  "position_noise_levels_m": [
+    0.005,
+    0.01
+  ],
+  "noise_seed_offset": 17000,
+  "cube_xy_jitter_m": 0.003,
+  "scenarios": [
+    {
+      "name": "center_square",
+      "center_xy_world_m": [
+        0.72,
+        -0.22
+      ],
+      "dimensions_xyz_m": [
+        0.05,
+        0.05,
+        0.05
+      ],
+      "yaw_world_degrees": 0.0,
+      "visual_distractors": []
+    }
+  ],
+  "estimators": [
+    "raw",
+    "relative_kalman"
+  ],
+  "grasp_strategies": [
+    "fixed_pose"
+  ],
+  "controller": {
+    "trajectory_steps": 120,
+    "gripper_settle_steps": 45,
+    "gripper_close_steps": 90,
+    "post_lift_hold_steps": 300
+  },
+  "relative_grasp_filter_config_path": "config/relative_grasp_filter.json",
+  "motion_seed_offset": 26000,
+  "sensor_noise_coordinate_frame": "camera",
+  "sensor_noise_axis_scales": [
+    1.0,
+    1.0,
+    2.0
+  ],
+  "motion_position_offset_levels_m": [
+    0.0,
+    0.003
+  ]
+}

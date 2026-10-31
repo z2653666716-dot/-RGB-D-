@@ -1,0 +1,168 @@
+{
+  "summary_by_method": {
+    "sensor=0.005|motion=0.0000m|raw|geometry_candidate": {
+      "attempts": 20,
+      "successes": 0,
+      "failures": {
+        "not_lifted_enough": 20
+      },
+      "success_rate": 0.0,
+      "final_position_rmse_m": 0.012134611877903462,
+      "execution_target_rmse_m": 0.012134611877903462
+    },
+    "sensor=0.005|motion=0.0000m|relative_kalman|geometry_candidate": {
+      "attempts": 20,
+      "successes": 0,
+      "failures": {
+        "not_lifted_enough": 20
+      },
+      "success_rate": 0.0,
+      "final_position_rmse_m": 0.010712867402762635,
+      "execution_target_rmse_m": 0.010712867402762635
+    },
+    "sensor=0.005|motion=0.0030m|raw|geometry_candidate": {
+      "attempts": 20,
+      "successes": 0,
+      "failures": {
+        "not_lifted_enough": 20
+      },
+      "success_rate": 0.0,
+      "final_position_rmse_m": 0.012134611877903462,
+      "execution_target_rmse_m": 0.013172602305481755
+    },
+    "sensor=0.005|motion=0.0030m|relative_kalman|geometry_candidate": {
+      "attempts": 20,
+      "successes": 0,
+      "failures": {
+        "not_lifted_enough": 20
+      },
+      "success_rate": 0.0,
+      "final_position_rmse_m": 0.010712867402762635,
+      "execution_target_rmse_m": 0.01209163173034521
+    },
+    "sensor=0.010|motion=0.0000m|raw|geometry_candidate": {
+      "attempts": 20,
+      "successes": 0,
+      "failures": {
+        "not_lifted_enough": 20
+      },
+      "success_rate": 0.0,
+      "final_position_rmse_m": 0.016192346787538805,
+      "execution_target_rmse_m": 0.016192346787538805
+    },
+    "sensor=0.010|motion=0.0000m|relative_kalman|geometry_candidate": {
+      "attempts": 20,
+      "successes": 0,
+      "failures": {
+        "not_lifted_enough": 20
+      },
+      "success_rate": 0.0,
+      "final_position_rmse_m": 0.011321119226140947,
+      "execution_target_rmse_m": 0.011321119226140947
+    },
+    "sensor=0.010|motion=0.0030m|raw|geometry_candidate": {
+      "attempts": 20,
+      "successes": 0,
+      "failures": {
+        "not_lifted_enough": 20
+      },
+      "success_rate": 0.0,
+      "final_position_rmse_m": 0.016192346787538805,
+      "execution_target_rmse_m": 0.016945126427568954
+    },
+    "sensor=0.010|motion=0.0030m|relative_kalman|geometry_candidate": {
+      "attempts": 20,
+      "successes": 0,
+      "failures": {
+        "not_lifted_enough": 20
+      },
+      "success_rate": 0.0,
+      "final_position_rmse_m": 0.011321119226140947,
+      "execution_target_rmse_m": 0.012785136814874308
+    }
+  },
+  "paired_observation_sequences_identical": {
+    "nearby_green_distractor__seed_4200__sensor_0p0050__motion_0p0000": true,
+    "nearby_green_distractor__seed_4200__sensor_0p0050__motion_0p0030": true,
+    "nearby_green_distractor__seed_4200__sensor_0p0100__motion_0p0000": true,
+    "nearby_green_distractor__seed_4200__sensor_0p0100__motion_0p0030": true,
+    "nearby_green_distractor__seed_4201__sensor_0p0050__motion_0p0000": true,
+    "nearby_green_distractor__seed_4201__sensor_0p0050__motion_0p0030": true,
+    "nearby_green_distractor__seed_4201__sensor_0p0100__motion_0p0000": true,
+    "nearby_green_distractor__seed_4201__sensor_0p0100__motion_0p0030": true,
+    "nearby_green_distractor__seed_4202__sensor_0p0050__motion_0p0000": true,
+    "nearby_green_distractor__seed_4202__sensor_0p0050__motion_0p0030": true,
+    "nearby_green_distractor__seed_4202__sensor_0p0100__motion_0p0000": true,
+    "nearby_green_distractor__seed_4202__sensor_0p0100__motion_0p0030": true,
+    "nearby_green_distractor__seed_4203__sensor_0p0050__motion_0p0000": true,
+    "nearby_green_distractor__seed_4203__sensor_0p0050__motion_0p0030": true,
+    "nearby_green_distractor__seed_4203__sensor_0p0100__motion_0p0000": true,
+    "nearby_green_distractor__seed_4203__sensor_0p0100__motion_0p0030": true,
+    "nearby_green_distractor__seed_4204__sensor_0p0050__motion_0p0000": true,
+    "nearby_green_distractor__seed_4204__sensor_0p0050__motion_0p0030": true,
+    "nearby_green_distractor__seed_4204__sensor_0p0100__motion_0p0000": true,
+    "nearby_green_distractor__seed_4204__sensor_0p0100__motion_0p0030": true,
+    "nearby_green_distractor__seed_4205__sensor_0p0050__motion_0p0000": true,
+    "nearby_green_distractor__seed_4205__sensor_0p0050__motion_0p0030": true,
+    "nearby_green_distractor__seed_4205__sensor_0p0100__motion_0p0000": true,
+    "nearby_green_distractor__seed_4205__sensor_0p0100__motion_0p0030": true,
+    "nearby_green_distractor__seed_4206__sensor_0p0050__motion_0p0000": true,
+    "nearby_green_distractor__seed_4206__sensor_0p0050__motion_0p0030": true,
+    "nearby_green_distractor__seed_4206__sensor_0p0100__motion_0p0000": true,
+    "nearby_green_distractor__seed_4206__sensor_0p0100__motion_0p0030": true,
+    "nearby_green_distractor__seed_4207__sensor_0p0050__motion_0p0000": true,
+    "nearby_green_distractor__seed_4207__sensor_0p0050__motion_0p0030": true,
+    "nearby_green_distractor__seed_4207__sensor_0p0100__motion_0p0000": true,
+    "nearby_green_distractor__seed_4207__sensor_0p0100__motion_0p0030": true,
+    "nearby_green_distractor__seed_4208__sensor_0p0050__motion_0p0000": true,
+    "nearby_green_distractor__seed_4208__sensor_0p0050__motion_0p0030": true,
+    "nearby_green_distractor__seed_4208__sensor_0p0100__motion_0p0000": true,
+    "nearby_green_distractor__seed_4208__sensor_0p0100__motion_0p0030": true,
+    "nearby_green_distractor__seed_4209__sensor_0p0050__motion_0p0000": true,
+    "nearby_green_distractor__seed_4209__sensor_0p0050__motion_0p0030": true,
+    "nearby_green_distractor__seed_4209__sensor_0p0100__motion_0p0000": true,
+    "nearby_green_distractor__seed_4209__sensor_0p0100__motion_0p0030": true,
+    "nearby_green_distractor__seed_4210__sensor_0p0050__motion_0p0000": true,
+    "nearby_green_distractor__seed_4210__sensor_0p0050__motion_0p0030": true,
+    "nearby_green_distractor__seed_4210__sensor_0p0100__motion_0p0000": true,
+    "nearby_green_distractor__seed_4210__sensor_0p0100__motion_0p0030": true,
+    "nearby_green_distractor__seed_4211__sensor_0p0050__motion_0p0000": true,
+    "nearby_green_distractor__seed_4211__sensor_0p0050__motion_0p0030": true,
+    "nearby_green_distractor__seed_4211__sensor_0p0100__motion_0p0000": true,
+    "nearby_green_distractor__seed_4211__sensor_0p0100__motion_0p0030": true,
+    "nearby_green_distractor__seed_4212__sensor_0p0050__motion_0p0000": true,
+    "nearby_green_distractor__seed_4212__sensor_0p0050__motion_0p0030": true,
+    "nearby_green_distractor__seed_4212__sensor_0p0100__motion_0p0000": true,
+    "nearby_green_distractor__seed_4212__sensor_0p0100__motion_0p0030": true,
+    "nearby_green_distractor__seed_4213__sensor_0p0050__motion_0p0000": true,
+    "nearby_green_distractor__seed_4213__sensor_0p0050__motion_0p0030": true,
+    "nearby_green_distractor__seed_4213__sensor_0p0100__motion_0p0000": true,
+    "nearby_green_distractor__seed_4213__sensor_0p0100__motion_0p0030": true,
+    "nearby_green_distractor__seed_4214__sensor_0p0050__motion_0p0000": true,
+    "nearby_green_distractor__seed_4214__sensor_0p0050__motion_0p0030": true,
+    "nearby_green_distractor__seed_4214__sensor_0p0100__motion_0p0000": true,
+    "nearby_green_distractor__seed_4214__sensor_0p0100__motion_0p0030": true,
+    "nearby_green_distractor__seed_4215__sensor_0p0050__motion_0p0000": true,
+    "nearby_green_distractor__seed_4215__sensor_0p0050__motion_0p0030": true,
+    "nearby_green_distractor__seed_4215__sensor_0p0100__motion_0p0000": true,
+    "nearby_green_distractor__seed_4215__sensor_0p0100__motion_0p0030": true,
+    "nearby_green_distractor__seed_4216__sensor_0p0050__motion_0p0000": true,
+    "nearby_green_distractor__seed_4216__sensor_0p0050__motion_0p0030": true,
+    "nearby_green_distractor__seed_4216__sensor_0p0100__motion_0p0000": true,
+    "nearby_green_distractor__seed_4216__sensor_0p0100__motion_0p0030": true,
+    "nearby_green_distractor__seed_4217__sensor_0p0050__motion_0p0000": true,
+    "nearby_green_distractor__seed_4217__sensor_0p0050__motion_0p0030": true,
+    "nearby_green_distractor__seed_4217__sensor_0p0100__motion_0p0000": true,
+    "nearby_green_distractor__seed_4217__sensor_0p0100__motion_0p0030": true,
+    "nearby_green_distractor__seed_4218__sensor_0p0050__motion_0p0000": true,
+    "nearby_green_distractor__seed_4218__sensor_0p0050__motion_0p0030": true,
+    "nearby_green_distractor__seed_4218__sensor_0p0100__motion_0p0000": true,
+    "nearby_green_distractor__seed_4218__sensor_0p0100__motion_0p0030": true,
+    "nearby_green_distractor__seed_4219__sensor_0p0050__motion_0p0000": true,
+    "nearby_green_distractor__seed_4219__sensor_0p0050__motion_0p0030": true,
+    "nearby_green_distractor__seed_4219__sensor_0p0100__motion_0p0000": true,
+    "nearby_green_distractor__seed_4219__sensor_0p0100__motion_0p0030": true
+  },
+  "trial_count": 160,
+  "runtime_error_count": 0
+}

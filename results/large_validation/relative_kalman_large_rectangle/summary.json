@@ -1,0 +1,164 @@
+{
+  "summary_by_method": {
+    "sensor=0.005|motion=0.0000m|raw|geometry_candidate": {
+      "attempts": 20,
+      "successes": 19,
+      "failures": {
+        "forbidden_collision": 1
+      },
+      "success_rate": 0.95,
+      "final_position_rmse_m": 0.007974774706991724,
+      "execution_target_rmse_m": 0.007974774706991724
+    },
+    "sensor=0.005|motion=0.0000m|relative_kalman|geometry_candidate": {
+      "attempts": 20,
+      "successes": 20,
+      "failures": {},
+      "success_rate": 1.0,
+      "final_position_rmse_m": 0.004934260126275855,
+      "execution_target_rmse_m": 0.004934260126275855
+    },
+    "sensor=0.005|motion=0.0030m|raw|geometry_candidate": {
+      "attempts": 20,
+      "successes": 15,
+      "failures": {
+        "forbidden_collision": 5
+      },
+      "success_rate": 0.75,
+      "final_position_rmse_m": 0.007974774706991724,
+      "execution_target_rmse_m": 0.008552169797280327
+    },
+    "sensor=0.005|motion=0.0030m|relative_kalman|geometry_candidate": {
+      "attempts": 20,
+      "successes": 18,
+      "failures": {
+        "forbidden_collision": 2
+      },
+      "success_rate": 0.9,
+      "final_position_rmse_m": 0.004934260126275855,
+      "execution_target_rmse_m": 0.006294668915968039
+    },
+    "sensor=0.010|motion=0.0000m|raw|geometry_candidate": {
+      "attempts": 20,
+      "successes": 16,
+      "failures": {
+        "forbidden_collision": 4
+      },
+      "success_rate": 0.8,
+      "final_position_rmse_m": 0.01438723427194478,
+      "execution_target_rmse_m": 0.01438723427194478
+    },
+    "sensor=0.010|motion=0.0000m|relative_kalman|geometry_candidate": {
+      "attempts": 20,
+      "successes": 20,
+      "failures": {},
+      "success_rate": 1.0,
+      "final_position_rmse_m": 0.006597968055956976,
+      "execution_target_rmse_m": 0.006597968055956976
+    },
+    "sensor=0.010|motion=0.0030m|raw|geometry_candidate": {
+      "attempts": 20,
+      "successes": 14,
+      "failures": {
+        "forbidden_collision": 6
+      },
+      "success_rate": 0.7,
+      "final_position_rmse_m": 0.01438723427194478,
+      "execution_target_rmse_m": 0.014489846625711313
+    },
+    "sensor=0.010|motion=0.0030m|relative_kalman|geometry_candidate": {
+      "attempts": 20,
+      "successes": 17,
+      "failures": {
+        "forbidden_collision": 3
+      },
+      "success_rate": 0.85,
+      "final_position_rmse_m": 0.006597968055956976,
+      "execution_target_rmse_m": 0.007613346308658433
+    }
+  },
+  "paired_observation_sequences_identical": {
+    "rotated_rectangle__seed_4100__sensor_0p0050__motion_0p0000": true,
+    "rotated_rectangle__seed_4100__sensor_0p0050__motion_0p0030": true,
+    "rotated_rectangle__seed_4100__sensor_0p0100__motion_0p0000": true,
+    "rotated_rectangle__seed_4100__sensor_0p0100__motion_0p0030": true,
+    "rotated_rectangle__seed_4101__sensor_0p0050__motion_0p0000": true,
+    "rotated_rectangle__seed_4101__sensor_0p0050__motion_0p0030": true,
+    "rotated_rectangle__seed_4101__sensor_0p0100__motion_0p0000": true,
+    "rotated_rectangle__seed_4101__sensor_0p0100__motion_0p0030": true,
+    "rotated_rectangle__seed_4102__sensor_0p0050__motion_0p0000": true,
+    "rotated_rectangle__seed_4102__sensor_0p0050__motion_0p0030": true,
+    "rotated_rectangle__seed_4102__sensor_0p0100__motion_0p0000": true,
+    "rotated_rectangle__seed_4102__sensor_0p0100__motion_0p0030": true,
+    "rotated_rectangle__seed_4103__sensor_0p0050__motion_0p0000": true,
+    "rotated_rectangle__seed_4103__sensor_0p0050__motion_0p0030": true,
+    "rotated_rectangle__seed_4103__sensor_0p0100__motion_0p0000": true,
+    "rotated_rectangle__seed_4103__sensor_0p0100__motion_0p0030": true,
+    "rotated_rectangle__seed_4104__sensor_0p0050__motion_0p0000": true,
+    "rotated_rectangle__seed_4104__sensor_0p0050__motion_0p0030": true,
+    "rotated_rectangle__seed_4104__sensor_0p0100__motion_0p0000": true,
+    "rotated_rectangle__seed_4104__sensor_0p0100__motion_0p0030": true,
+    "rotated_rectangle__seed_4105__sensor_0p0050__motion_0p0000": true,
+    "rotated_rectangle__seed_4105__sensor_0p0050__motion_0p0030": true,
+    "rotated_rectangle__seed_4105__sensor_0p0100__motion_0p0000": true,
+    "rotated_rectangle__seed_4105__sensor_0p0100__motion_0p0030": true,
+    "rotated_rectangle__seed_4106__sensor_0p0050__motion_0p0000": true,
+    "rotated_rectangle__seed_4106__sensor_0p0050__motion_0p0030": true,
+    "rotated_rectangle__seed_4106__sensor_0p0100__motion_0p0000": true,
+    "rotated_rectangle__seed_4106__sensor_0p0100__motion_0p0030": true,
+    "rotated_rectangle__seed_4107__sensor_0p0050__motion_0p0000": true,
+    "rotated_rectangle__seed_4107__sensor_0p0050__motion_0p0030": true,
+    "rotated_rectangle__seed_4107__sensor_0p0100__motion_0p0000": true,
+    "rotated_rectangle__seed_4107__sensor_0p0100__motion_0p0030": true,
+    "rotated_rectangle__seed_4108__sensor_0p0050__motion_0p0000": true,
+    "rotated_rectangle__seed_4108__sensor_0p0050__motion_0p0030": true,
+    "rotated_rectangle__seed_4108__sensor_0p0100__motion_0p0000": true,
+    "rotated_rectangle__seed_4108__sensor_0p0100__motion_0p0030": true,
+    "rotated_rectangle__seed_4109__sensor_0p0050__motion_0p0000": true,
+    "rotated_rectangle__seed_4109__sensor_0p0050__motion_0p0030": true,
+    "rotated_rectangle__seed_4109__sensor_0p0100__motion_0p0000": true,
+    "rotated_rectangle__seed_4109__sensor_0p0100__motion_0p0030": true,
+    "rotated_rectangle__seed_4110__sensor_0p0050__motion_0p0000": true,
+    "rotated_rectangle__seed_4110__sensor_0p0050__motion_0p0030": true,
+    "rotated_rectangle__seed_4110__sensor_0p0100__motion_0p0000": true,
+    "rotated_rectangle__seed_4110__sensor_0p0100__motion_0p0030": true,
+    "rotated_rectangle__seed_4111__sensor_0p0050__motion_0p0000": true,
+    "rotated_rectangle__seed_4111__sensor_0p0050__motion_0p0030": true,
+    "rotated_rectangle__seed_4111__sensor_0p0100__motion_0p0000": true,
+    "rotated_rectangle__seed_4111__sensor_0p0100__motion_0p0030": true,
+    "rotated_rectangle__seed_4112__sensor_0p0050__motion_0p0000": true,
+    "rotated_rectangle__seed_4112__sensor_0p0050__motion_0p0030": true,
+    "rotated_rectangle__seed_4112__sensor_0p0100__motion_0p0000": true,
+    "rotated_rectangle__seed_4112__sensor_0p0100__motion_0p0030": true,
+    "rotated_rectangle__seed_4113__sensor_0p0050__motion_0p0000": true,
+    "rotated_rectangle__seed_4113__sensor_0p0050__motion_0p0030": true,
+    "rotated_rectangle__seed_4113__sensor_0p0100__motion_0p0000": true,
+    "rotated_rectangle__seed_4113__sensor_0p0100__motion_0p0030": true,
+    "rotated_rectangle__seed_4114__sensor_0p0050__motion_0p0000": true,
+    "rotated_rectangle__seed_4114__sensor_0p0050__motion_0p0030": true,
+    "rotated_rectangle__seed_4114__sensor_0p0100__motion_0p0000": true,
+    "rotated_rectangle__seed_4114__sensor_0p0100__motion_0p0030": true,
+    "rotated_rectangle__seed_4115__sensor_0p0050__motion_0p0000": true,
+    "rotated_rectangle__seed_4115__sensor_0p0050__motion_0p0030": true,
+    "rotated_rectangle__seed_4115__sensor_0p0100__motion_0p0000": true,
+    "rotated_rectangle__seed_4115__sensor_0p0100__motion_0p0030": true,
+    "rotated_rectangle__seed_4116__sensor_0p0050__motion_0p0000": true,
+    "rotated_rectangle__seed_4116__sensor_0p0050__motion_0p0030": true,
+    "rotated_rectangle__seed_4116__sensor_0p0100__motion_0p0000": true,
+    "rotated_rectangle__seed_4116__sensor_0p0100__motion_0p0030": true,
+    "rotated_rectangle__seed_4117__sensor_0p0050__motion_0p0000": true,
+    "rotated_rectangle__seed_4117__sensor_0p0050__motion_0p0030": true,
+    "rotated_rectangle__seed_4117__sensor_0p0100__motion_0p0000": true,
+    "rotated_rectangle__seed_4117__sensor_0p0100__motion_0p0030": true,
+    "rotated_rectangle__seed_4118__sensor_0p0050__motion_0p0000": true,
+    "rotated_rectangle__seed_4118__sensor_0p0050__motion_0p0030": true,
+    "rotated_rectangle__seed_4118__sensor_0p0100__motion_0p0000": true,
+    "rotated_rectangle__seed_4118__sensor_0p0100__motion_0p0030": true,
+    "rotated_rectangle__seed_4119__sensor_0p0050__motion_0p0000": true,
+    "rotated_rectangle__seed_4119__sensor_0p0050__motion_0p0030": true,
+    "rotated_rectangle__seed_4119__sensor_0p0100__motion_0p0000": true,
+    "rotated_rectangle__seed_4119__sensor_0p0100__motion_0p0030": true
+  },
+  "trial_count": 160,
+  "runtime_error_count": 0
+}

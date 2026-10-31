@@ -1,0 +1,15 @@
+{
+  "source_file": "validation_summary.json",
+  "source_sha256": "b65967d8f9b997fee3390e874b31ccc63f758c809f60a5ed19b48f61ba693251",
+  "baseline": "Raw (last frame)",
+  "method": "Relative Kalman fusion (10 frames)",
+  "note": "No old-Kalman baseline was included in this validation. All figures retain failed scenes.",
+  "figures": [
+    "filter_comparison_overview.png",
+    "filter_comparison_overview.svg",
+    "filter_success_by_scene.png",
+    "filter_success_by_scene.svg",
+    "filter_success_by_noise.png",
+    "filter_success_by_noise.svg"
+  ]
+}

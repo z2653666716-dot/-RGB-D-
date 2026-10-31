@@ -1,0 +1,4 @@
+{
+  "description": "First camera observation initializes mean and covariance once; subsequent independent observations update the relative position. This floor affects assumed sensor variance only.",
+  "minimum_sensor_position_std_m": 0.0005
+}

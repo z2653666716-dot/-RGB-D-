@@ -1,0 +1,82 @@
+{
+  "created_at_utc": "2026-10-31T11:45:50.998152+00:00",
+  "project_root": ".",
+  "output_root": "results/large_validation",
+  "expected_total_trials": 1080,
+  "methods": [
+    "raw",
+    "relative_kalman"
+  ],
+  "primary_endpoints": [
+    "paired_grasp_success_difference",
+    "final_position_rmse_m"
+  ],
+  "statistical_unit_note": "Report per-condition paired seed counts. Shared seed across noise conditions is repeated measurement, not an additional independent seed.",
+  "motion_model_note": "Independent per-axis XYZ execution-target offset, not continuous trajectory disturbance or measured arm-error correction.",
+  "known_geometry_note": "Known table height and object height constrain target-center Z; fixed camera extrinsics are treated as exact.",
+  "claim_note": "Evaluate this coordinate/covariance/Kalman implementation as a project method; no claim of a novel Kalman algorithm.",
+  "frozen_files_sha256": {
+    "src/camera.py": "9404b0408e310a035f6b61abe646dabb2f26f8faeb11b8eacae00e739caad1fe",
+    "src/evaluation.py": "7841ed4884d592a93d4747b98dfd827502db7681d4c05d507ea5663a38099f14",
+    "src/geometry.py": "0705559b61b98610929505bf74fcc944b63d2ccb0518e27be2f2350bd560c0f6",
+    "src/grasp_controller.py": "62a2cb2f6ecfad5ef0b14e4fdafed292b0a2faf32f52578b6f6552e3a3261edd",
+    "src/grasp_filter.py": "c5c74d8771eab560d7eb970e6ff0037e25795e3f06637c4d98ecbeed349acec9",
+    "src/grasp_planner.py": "ada3a3c454a58c141a135a89f2c05fb055474bb095c217260c35feda822b57ab",
+    "src/inverse_kinematics.py": "cc3a809b10013ff480811ffd1fdc8204331d0e74aac0129e03ab92b7b4d4c7fa",
+    "src/main.py": "6fb21ba555b66f6a9e7350a0f98f3d6f7ce441fd0aefe2d377ed1671e69827d1",
+    "src/point_cloud.py": "eb9046c766feef760f2f1c6c02b73d4b9f1dbf5f5f5ba6c95b7052c737190837",
+    "src/relative_grasp_estimator.py": "e8d9048b026cbdec13068397563ede71b571c5e52837e56dbda5f8487e423534",
+    "src/simulation.py": "4e3657f0d20ecee94d8f5b1263b7c17822ea855cd5808fc116e16048499e91d7",
+    "src/state_estimator.py": "31ac2a09ef0803b151eff99dd1564cb446c7dbb573346799990a6865f6fe80cd",
+    "src/vision.py": "555e3cc4813e84ca3254842d88057808255c4dfc87ae35520cddba5110597004",
+    "scripts/run_experiments.py": "f270dbe329437bbcaef2f3e4264b11c2ea000106e6f5b43f2847a7fec34fa873",
+    "config/scene.json": "fe1821e3a263c00122c21c582c4489511583ce3707cfe36e54cfe16c19a22078",
+    "config/grasp_evaluation.json": "47f4a0a5a11cbd9592eebc4d557cc2dd5b3f4d50cbdff3bd4c780d6f61c5d21d",
+    "config/geometry.json": "dbf5a4a287c73b16e7760e076e92a157b5b313b36f958b567bdc8214c5e52672",
+    "config/grasp_planner.json": "19550253e8914c6e6d3f6c4577d0eec15936212b805db3469eb4b8071f51561a",
+    "config/grasp_filter.json": "744fd04aee1c39117d4a198ee150e4bf072eb11e2f46447ff440aa835398a81e",
+    "config/experiment.json": "21486e5cc1c7f1d393d9140fbc5e03979fea9f81397d4800b42630e686751d5e",
+    "config/relative_grasp_filter.json": "9f630ba7b222f7315d64587d6557eb6a474906a9ff735214a5fe6503db1048f8",
+    "config/relative_kalman_large_primary.json": "c80aaeaf6c48d4c6ce69cb349a84729cb37a3eb4fd4d8660167d7ba45fa2212a",
+    "config/relative_kalman_large_square.json": "4f4003998c1ead8ba4c7070cda0e6e315311a58b41bd5d4e889f495c3c2f0a2a",
+    "config/relative_kalman_large_rectangle.json": "9112a305e42f0be606d5c70c77ed3088daa83b8699b8bfbf6fe65d88fd1483b9",
+    "config/relative_kalman_large_distractor.json": "4de680dceea397bbe638d1c8045007061e1103537967d1f069fe3178d344cc03"
+  },
+  "experiments": [
+    {
+      "name": "relative_kalman_large_primary",
+      "config_path": "config/relative_kalman_large_primary.json",
+      "output_directory": "results/large_validation/relative_kalman_large_primary",
+      "expected_trials": 600,
+      "config_sha256": "c80aaeaf6c48d4c6ce69cb349a84729cb37a3eb4fd4d8660167d7ba45fa2212a"
+    },
+    {
+      "name": "relative_kalman_large_square",
+      "config_path": "config/relative_kalman_large_square.json",
+      "output_directory": "results/large_validation/relative_kalman_large_square",
+      "expected_trials": 160,
+      "config_sha256": "4f4003998c1ead8ba4c7070cda0e6e315311a58b41bd5d4e889f495c3c2f0a2a"
+    },
+    {
+      "name": "relative_kalman_large_rectangle",
+      "config_path": "config/relative_kalman_large_rectangle.json",
+      "output_directory": "results/large_validation/relative_kalman_large_rectangle",
+      "expected_trials": 160,
+      "config_sha256": "9112a305e42f0be606d5c70c77ed3088daa83b8699b8bfbf6fe65d88fd1483b9"
+    },
+    {
+      "name": "relative_kalman_large_distractor",
+      "config_path": "config/relative_kalman_large_distractor.json",
+      "output_directory": "results/large_validation/relative_kalman_large_distractor",
+      "expected_trials": 160,
+      "config_sha256": "4de680dceea397bbe638d1c8045007061e1103537967d1f069fe3178d344cc03"
+    }
+  ],
+  "publication_note": "Only machine-specific metadata paths were normalized. Frozen hashes describe the original execution snapshot; published configuration hashes below include portable output paths. Algorithm source bytes are unchanged.",
+  "published_configuration_sha256": {
+    "config/relative_kalman_large_primary.json": "9cae585c870365c7c97f744871a209618e6f8de10dbbd3d69c23fe2e860b09c3",
+    "config/relative_kalman_large_square.json": "07ef0abed4b879e720e7ab12b77b42209f1e908c6da42db8b4800f8097c3b616",
+    "config/relative_kalman_large_rectangle.json": "f91fa4caf49b54c3df50d0395e0c7d909c135f28b9eae17cc7c39f3f53ee531c",
+    "config/relative_kalman_large_distractor.json": "a17f2d2d651d314a8b81e050c9835aa94936a2117f5498c96b5ed80731ccf56b"
+  }
+}

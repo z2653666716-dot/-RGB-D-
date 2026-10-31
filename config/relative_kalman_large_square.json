@@ -1,0 +1,127 @@
+{
+  "experiment_name": "relative_kalman_large_square",
+  "formal_statistics": true,
+  "protocol_version": "3.0",
+  "protocol_note": "Frozen locally before this expanded run. Two methods share identical camera observations and endpoint-offset samples. Independent new seed ranges; ten frames each; no adaptive tuning or early stopping based on success. Known object height and fixed exact camera extrinsics; independent sensor XYZ noise; endpoint execution-offset proxy without in-motion correction.",
+  "development_seeds": [
+    42,
+    43,
+    1000,
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006,
+    1007,
+    1008,
+    1009,
+    1010,
+    1011,
+    1012,
+    1013,
+    1014,
+    1015,
+    1016,
+    1017,
+    1018,
+    1019,
+    1020,
+    1021,
+    1022,
+    1023,
+    1024,
+    1025,
+    1026,
+    1027,
+    1028,
+    1029,
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009
+  ],
+  "scene_config_path": "config/scene.json",
+  "evaluation_config_path": "config/grasp_evaluation.json",
+  "geometry_config_path": "config/geometry.json",
+  "planner_config_path": "config/grasp_planner.json",
+  "filter_config_path": "config/grasp_filter.json",
+  "estimator_config_path": "config/experiment.json",
+  "output_directory": "outputs/large_validation/relative_kalman_large_square",
+  "test_seeds": [
+    4000,
+    4001,
+    4002,
+    4003,
+    4004,
+    4005,
+    4006,
+    4007,
+    4008,
+    4009,
+    4010,
+    4011,
+    4012,
+    4013,
+    4014,
+    4015,
+    4016,
+    4017,
+    4018,
+    4019
+  ],
+  "observation_frame_count": 10,
+  "position_noise_levels_m": [
+    0.005,
+    0.01
+  ],
+  "noise_seed_offset": 17000,
+  "cube_xy_jitter_m": 0.003,
+  "scenarios": [
+    {
+      "name": "center_square",
+      "center_xy_world_m": [
+        0.72,
+        -0.22
+      ],
+      "dimensions_xyz_m": [
+        0.05,
+        0.05,
+        0.05
+      ],
+      "yaw_world_degrees": 0.0,
+      "visual_distractors": []
+    }
+  ],
+  "estimators": [
+    "raw",
+    "relative_kalman"
+  ],
+  "grasp_strategies": [
+    "geometry_candidate"
+  ],
+  "controller": {
+    "trajectory_steps": 120,
+    "gripper_settle_steps": 45,
+    "gripper_close_steps": 90,
+    "post_lift_hold_steps": 300
+  },
+  "relative_grasp_filter_config_path": "config/relative_grasp_filter.json",
+  "motion_seed_offset": 26000,
+  "sensor_noise_coordinate_frame": "camera",
+  "sensor_noise_axis_scales": [
+    1.0,
+    1.0,
+    2.0
+  ],
+  "motion_position_offset_levels_m": [
+    0.0,
+    0.003
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "minimum_lift_m": 0.08,
+  "minimum_hold_seconds": 1.0,
+  "maximum_drop_from_peak_m": 0.02,
+  "maximum_cube_to_gripper_drift_m": 0.025
+}

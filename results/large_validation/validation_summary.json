@@ -1,0 +1,1244 @@
+{
+  "completed_at_utc": "2026-10-31T12:00:39.306557+00:00",
+  "audit": {
+    "expected_trials": 1080,
+    "actual_trials": 1080,
+    "paired_comparisons": 540,
+    "independent_seed_count": 110,
+    "runtime_errors": 0,
+    "all_pair_inputs_identical": true,
+    "all_frozen_files_unchanged": true,
+    "filtered_covariance_records_checked": 540,
+    "source_files_checked": 25
+  },
+  "statistics": {
+    "bootstrap_repetitions": 20000,
+    "bootstrap_seed": 20261031,
+    "confidence_intervals": "Percentile 95% paired bootstrap, resampling complete seeds within each experiment and preserving experiment weights.",
+    "localization": "Use the final estimate of each unique scenario/seed/sensor-noise/strategy sequence; remove repeated localization records across motion-noise levels.",
+    "condition_tests": "Two-sided exact McNemar tests with Holm correction across all 18 sensor/motion/scene conditions."
+  },
+  "overall": {
+    "pair_count": 540,
+    "raw_successes": 372,
+    "filtered_successes": 438,
+    "both_success": 365,
+    "both_fail": 95,
+    "filter_only_success": 73,
+    "raw_only_success": 7,
+    "success_rate_difference_ci95": [
+      0.08333333333333333,
+      0.16296296296296298
+    ],
+    "methods": {
+      "raw": {
+        "successes": 372,
+        "attempts": 540,
+        "success_rate": 0.6888888888888889,
+        "unique_localization_cases": 270,
+        "final_position_rmse_m": 0.01244749479877209,
+        "execution_target_rmse_m": 0.012916366002812712,
+        "failures": {
+          "not_lifted_enough": 140,
+          "object_dropped_to_low_height": 5,
+          "object_dropped_after_lift": 5,
+          "forbidden_collision": 18
+        }
+      },
+      "relative_kalman": {
+        "successes": 438,
+        "attempts": 540,
+        "success_rate": 0.8111111111111111,
+        "unique_localization_cases": 270,
+        "final_position_rmse_m": 0.00861307290623411,
+        "execution_target_rmse_m": 0.009305050834354279,
+        "failures": {
+          "not_lifted_enough": 87,
+          "object_dropped_to_low_height": 1,
+          "forbidden_collision": 11,
+          "object_dropped_after_lift": 3
+        }
+      }
+    },
+    "success_rate_difference": 0.12222222222222222
+  },
+  "generalization_combined": {
+    "pair_count": 240,
+    "raw_successes": 124,
+    "filtered_successes": 147,
+    "both_success": 120,
+    "both_fail": 89,
+    "filter_only_success": 27,
+    "raw_only_success": 4,
+    "success_rate_difference_ci95": [
+      0.037500000000000006,
+      0.15833333333333333
+    ],
+    "methods": {
+      "raw": {
+        "successes": 124,
+        "attempts": 240,
+        "success_rate": 0.5166666666666667,
+        "unique_localization_cases": 120,
+        "final_position_rmse_m": 0.013299759818735372,
+        "execution_target_rmse_m": 0.013452120669118751,
+        "failures": {
+          "not_lifted_enough": 93,
+          "object_dropped_to_low_height": 3,
+          "object_dropped_after_lift": 2,
+          "forbidden_collision": 18
+        }
+      },
+      "relative_kalman": {
+        "successes": 147,
+        "attempts": 240,
+        "success_rate": 0.6125,
+        "unique_localization_cases": 120,
+        "final_position_rmse_m": 0.008806461015253845,
+        "execution_target_rmse_m": 0.009330065184834969,
+        "failures": {
+          "object_dropped_after_lift": 3,
+          "forbidden_collision": 10,
+          "not_lifted_enough": 80
+        }
+      }
+    },
+    "success_rate_difference": 0.09583333333333334
+  },
+  "experiments": {
+    "relative_kalman_large_primary": {
+      "pair_count": 300,
+      "raw_successes": 248,
+      "filtered_successes": 291,
+      "both_success": 245,
+      "both_fail": 6,
+      "filter_only_success": 46,
+      "raw_only_success": 3,
+      "success_rate_difference_ci95": [
+        0.09333333333333332,
+        0.19999999999999996
+      ],
+      "methods": {
+        "raw": {
+          "successes": 248,
+          "attempts": 300,
+          "success_rate": 0.8266666666666667,
+          "unique_localization_cases": 150,
+          "final_position_rmse_m": 0.011721149226461818,
+          "execution_target_rmse_m": 0.012471201982819593,
+          "failures": {
+            "not_lifted_enough": 47,
+            "object_dropped_to_low_height": 2,
+            "object_dropped_after_lift": 3
+          }
+        },
+        "relative_kalman": {
+          "successes": 291,
+          "attempts": 300,
+          "success_rate": 0.97,
+          "unique_localization_cases": 150,
+          "final_position_rmse_m": 0.008455178313201842,
+          "execution_target_rmse_m": 0.009284990833126082,
+          "failures": {
+            "not_lifted_enough": 7,
+            "object_dropped_to_low_height": 1,
+            "forbidden_collision": 1
+          }
+        }
+      },
+      "success_rate_difference": 0.14333333333333334,
+      "independent_seed_count": 50,
+      "scenario": "center_square",
+      "grasp_strategy": "fixed_pose"
+    },
+    "relative_kalman_large_square": {
+      "pair_count": 80,
+      "raw_successes": 60,
+      "filtered_successes": 72,
+      "both_success": 57,
+      "both_fail": 5,
+      "filter_only_success": 15,
+      "raw_only_success": 3,
+      "success_rate_difference_ci95": [
+        0.025,
+        0.2875
+      ],
+      "methods": {
+        "raw": {
+          "successes": 60,
+          "attempts": 80,
+          "success_rate": 0.75,
+          "unique_localization_cases": 40,
+          "final_position_rmse_m": 0.013807085606273254,
+          "execution_target_rmse_m": 0.013672363912260939,
+          "failures": {
+            "not_lifted_enough": 13,
+            "object_dropped_to_low_height": 3,
+            "object_dropped_after_lift": 2,
+            "forbidden_collision": 2
+          }
+        },
+        "relative_kalman": {
+          "successes": 72,
+          "attempts": 80,
+          "success_rate": 0.9,
+          "unique_localization_cases": 40,
+          "final_position_rmse_m": 0.008789458450219152,
+          "execution_target_rmse_m": 0.009035137550167889,
+          "failures": {
+            "object_dropped_after_lift": 3,
+            "forbidden_collision": 5
+          }
+        }
+      },
+      "success_rate_difference": 0.15,
+      "independent_seed_count": 20,
+      "scenario": "center_square",
+      "grasp_strategy": "geometry_candidate"
+    },
+    "relative_kalman_large_rectangle": {
+      "pair_count": 80,
+      "raw_successes": 64,
+      "filtered_successes": 75,
+      "both_success": 63,
+      "both_fail": 4,
+      "filter_only_success": 12,
+      "raw_only_success": 1,
+      "success_rate_difference_ci95": [
+        0.0375,
+        0.2625
+      ],
+      "methods": {
+        "raw": {
+          "successes": 64,
+          "attempts": 80,
+          "success_rate": 0.8,
+          "unique_localization_cases": 40,
+          "final_position_rmse_m": 0.011631628037877963,
+          "execution_target_rmse_m": 0.01176525398260965,
+          "failures": {
+            "forbidden_collision": 16
+          }
+        },
+        "relative_kalman": {
+          "successes": 75,
+          "attempts": 80,
+          "success_rate": 0.9375,
+          "unique_localization_cases": 40,
+          "final_position_rmse_m": 0.005825809191055973,
+          "execution_target_rmse_m": 0.00643167948980672,
+          "failures": {
+            "forbidden_collision": 5
+          }
+        }
+      },
+      "success_rate_difference": 0.1375,
+      "independent_seed_count": 20,
+      "scenario": "rotated_rectangle",
+      "grasp_strategy": "geometry_candidate"
+    },
+    "relative_kalman_large_distractor": {
+      "pair_count": 80,
+      "raw_successes": 0,
+      "filtered_successes": 0,
+      "both_success": 0,
+      "both_fail": 80,
+      "filter_only_success": 0,
+      "raw_only_success": 0,
+      "success_rate_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "methods": {
+        "raw": {
+          "successes": 0,
+          "attempts": 80,
+          "success_rate": 0.0,
+          "unique_localization_cases": 40,
+          "final_position_rmse_m": 0.014308055421951543,
+          "execution_target_rmse_m": 0.014748691984884228,
+          "failures": {
+            "not_lifted_enough": 80
+          }
+        },
+        "relative_kalman": {
+          "successes": 0,
+          "attempts": 80,
+          "success_rate": 0.0,
+          "unique_localization_cases": 40,
+          "final_position_rmse_m": 0.011021190237938744,
+          "execution_target_rmse_m": 0.01175372866156755,
+          "failures": {
+            "not_lifted_enough": 80
+          }
+        }
+      },
+      "success_rate_difference": 0.0,
+      "independent_seed_count": 20,
+      "scenario": "nearby_green_distractor",
+      "grasp_strategy": "geometry_candidate"
+    }
+  },
+  "conditions": [
+    {
+      "pair_count": 50,
+      "raw_successes": 50,
+      "filtered_successes": 50,
+      "both_success": 50,
+      "both_fail": 0,
+      "filter_only_success": 0,
+      "raw_only_success": 0,
+      "success_rate_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "methods": {
+        "raw": {
+          "successes": 50,
+          "attempts": 50,
+          "success_rate": 1.0,
+          "unique_localization_cases": 50,
+          "final_position_rmse_m": 0.008263916271621163,
+          "execution_target_rmse_m": 0.008263916271621163,
+          "failures": {},
+          "success_rate_wilson_ci95": [
+            0.9286524008666414,
+            1.0
+          ]
+        },
+        "relative_kalman": {
+          "successes": 50,
+          "attempts": 50,
+          "success_rate": 1.0,
+          "unique_localization_cases": 50,
+          "final_position_rmse_m": 0.008263916271621163,
+          "execution_target_rmse_m": 0.008263916271621163,
+          "failures": {},
+          "success_rate_wilson_ci95": [
+            0.9286524008666414,
+            1.0
+          ]
+        }
+      },
+      "success_rate_difference": 0.0,
+      "experiment": "relative_kalman_large_primary",
+      "scenario": "center_square",
+      "sensor_xy_std_m": 0.0,
+      "motion_xyz_std_m": 0.0,
+      "grasp_strategy": "fixed_pose",
+      "mcnemar_exact_p_two_sided": 1.0,
+      "mcnemar_holm_adjusted_p": 1.0
+    },
+    {
+      "pair_count": 50,
+      "raw_successes": 47,
+      "filtered_successes": 47,
+      "both_success": 47,
+      "both_fail": 3,
+      "filter_only_success": 0,
+      "raw_only_success": 0,
+      "success_rate_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "methods": {
+        "raw": {
+          "successes": 47,
+          "attempts": 50,
+          "success_rate": 0.94,
+          "unique_localization_cases": 50,
+          "final_position_rmse_m": 0.008263916271621163,
+          "execution_target_rmse_m": 0.009892068896583403,
+          "failures": {
+            "not_lifted_enough": 3
+          },
+          "success_rate_wilson_ci95": [
+            0.8378290831116182,
+            0.979385029651026
+          ]
+        },
+        "relative_kalman": {
+          "successes": 47,
+          "attempts": 50,
+          "success_rate": 0.94,
+          "unique_localization_cases": 50,
+          "final_position_rmse_m": 0.008263916271621163,
+          "execution_target_rmse_m": 0.009892068896583403,
+          "failures": {
+            "not_lifted_enough": 3
+          },
+          "success_rate_wilson_ci95": [
+            0.8378290831116182,
+            0.979385029651026
+          ]
+        }
+      },
+      "success_rate_difference": 0.0,
+      "experiment": "relative_kalman_large_primary",
+      "scenario": "center_square",
+      "sensor_xy_std_m": 0.0,
+      "motion_xyz_std_m": 0.003,
+      "grasp_strategy": "fixed_pose",
+      "mcnemar_exact_p_two_sided": 1.0,
+      "mcnemar_holm_adjusted_p": 1.0
+    },
+    {
+      "pair_count": 50,
+      "raw_successes": 47,
+      "filtered_successes": 50,
+      "both_success": 47,
+      "both_fail": 0,
+      "filter_only_success": 3,
+      "raw_only_success": 0,
+      "success_rate_difference_ci95": [
+        0.0,
+        0.14
+      ],
+      "methods": {
+        "raw": {
+          "successes": 47,
+          "attempts": 50,
+          "success_rate": 0.94,
+          "unique_localization_cases": 50,
+          "final_position_rmse_m": 0.010182329147990589,
+          "execution_target_rmse_m": 0.010182329147990589,
+          "failures": {
+            "not_lifted_enough": 3
+          },
+          "success_rate_wilson_ci95": [
+            0.8378290831116182,
+            0.979385029651026
+          ]
+        },
+        "relative_kalman": {
+          "successes": 50,
+          "attempts": 50,
+          "success_rate": 1.0,
+          "unique_localization_cases": 50,
+          "final_position_rmse_m": 0.008238155866684558,
+          "execution_target_rmse_m": 0.008238155866684558,
+          "failures": {},
+          "success_rate_wilson_ci95": [
+            0.9286524008666414,
+            1.0
+          ]
+        }
+      },
+      "success_rate_difference": 0.06,
+      "experiment": "relative_kalman_large_primary",
+      "scenario": "center_square",
+      "sensor_xy_std_m": 0.005,
+      "motion_xyz_std_m": 0.0,
+      "grasp_strategy": "fixed_pose",
+      "mcnemar_exact_p_two_sided": 0.25,
+      "mcnemar_holm_adjusted_p": 1.0
+    },
+    {
+      "pair_count": 50,
+      "raw_successes": 43,
+      "filtered_successes": 47,
+      "both_success": 42,
+      "both_fail": 2,
+      "filter_only_success": 5,
+      "raw_only_success": 1,
+      "success_rate_difference_ci95": [
+        0.0,
+        0.18
+      ],
+      "methods": {
+        "raw": {
+          "successes": 43,
+          "attempts": 50,
+          "success_rate": 0.86,
+          "unique_localization_cases": 50,
+          "final_position_rmse_m": 0.010182329147990589,
+          "execution_target_rmse_m": 0.011830930068790555,
+          "failures": {
+            "not_lifted_enough": 7
+          },
+          "success_rate_wilson_ci95": [
+            0.7381380628941446,
+            0.9304916657298371
+          ]
+        },
+        "relative_kalman": {
+          "successes": 47,
+          "attempts": 50,
+          "success_rate": 0.94,
+          "unique_localization_cases": 50,
+          "final_position_rmse_m": 0.008238155866684558,
+          "execution_target_rmse_m": 0.009864544642819679,
+          "failures": {
+            "object_dropped_to_low_height": 1,
+            "not_lifted_enough": 1,
+            "forbidden_collision": 1
+          },
+          "success_rate_wilson_ci95": [
+            0.8378290831116182,
+            0.979385029651026
+          ]
+        }
+      },
+      "success_rate_difference": 0.08,
+      "experiment": "relative_kalman_large_primary",
+      "scenario": "center_square",
+      "sensor_xy_std_m": 0.005,
+      "motion_xyz_std_m": 0.003,
+      "grasp_strategy": "fixed_pose",
+      "mcnemar_exact_p_two_sided": 0.21875,
+      "mcnemar_holm_adjusted_p": 1.0
+    },
+    {
+      "pair_count": 50,
+      "raw_successes": 30,
+      "filtered_successes": 49,
+      "both_success": 30,
+      "both_fail": 1,
+      "filter_only_success": 19,
+      "raw_only_success": 0,
+      "success_rate_difference_ci95": [
+        0.24,
+        0.52
+      ],
+      "methods": {
+        "raw": {
+          "successes": 30,
+          "attempts": 50,
+          "success_rate": 0.6,
+          "unique_localization_cases": 50,
+          "final_position_rmse_m": 0.015497866903047521,
+          "execution_target_rmse_m": 0.015497866903047521,
+          "failures": {
+            "not_lifted_enough": 18,
+            "object_dropped_after_lift": 2
+          },
+          "success_rate_wilson_ci95": [
+            0.4618143774758936,
+            0.7239161026974346
+          ]
+        },
+        "relative_kalman": {
+          "successes": 49,
+          "attempts": 50,
+          "success_rate": 0.98,
+          "unique_localization_cases": 50,
+          "final_position_rmse_m": 0.008849327471393633,
+          "execution_target_rmse_m": 0.008849327471393633,
+          "failures": {
+            "not_lifted_enough": 1
+          },
+          "success_rate_wilson_ci95": [
+            0.8950455641036219,
+            0.9964607407283539
+          ]
+        }
+      },
+      "success_rate_difference": 0.38,
+      "experiment": "relative_kalman_large_primary",
+      "scenario": "center_square",
+      "sensor_xy_std_m": 0.01,
+      "motion_xyz_std_m": 0.0,
+      "grasp_strategy": "fixed_pose",
+      "mcnemar_exact_p_two_sided": 3.814697265625e-06,
+      "mcnemar_holm_adjusted_p": 6.866455078125e-05
+    },
+    {
+      "pair_count": 50,
+      "raw_successes": 31,
+      "filtered_successes": 48,
+      "both_success": 29,
+      "both_fail": 0,
+      "filter_only_success": 19,
+      "raw_only_success": 2,
+      "success_rate_difference_ci95": [
+        0.18,
+        0.5
+      ],
+      "methods": {
+        "raw": {
+          "successes": 31,
+          "attempts": 50,
+          "success_rate": 0.62,
+          "unique_localization_cases": 50,
+          "final_position_rmse_m": 0.015497866903047521,
+          "execution_target_rmse_m": 0.01682870531156142,
+          "failures": {
+            "not_lifted_enough": 16,
+            "object_dropped_to_low_height": 2,
+            "object_dropped_after_lift": 1
+          },
+          "success_rate_wilson_ci95": [
+            0.4815044693099298,
+            0.7413721068980641
+          ]
+        },
+        "relative_kalman": {
+          "successes": 48,
+          "attempts": 50,
+          "success_rate": 0.96,
+          "unique_localization_cases": 50,
+          "final_position_rmse_m": 0.008849327471393633,
+          "execution_target_rmse_m": 0.010374677808894154,
+          "failures": {
+            "not_lifted_enough": 2
+          },
+          "success_rate_wilson_ci95": [
+            0.8653990931249297,
+            0.9889611156723802
+          ]
+        }
+      },
+      "success_rate_difference": 0.34,
+      "experiment": "relative_kalman_large_primary",
+      "scenario": "center_square",
+      "sensor_xy_std_m": 0.01,
+      "motion_xyz_std_m": 0.003,
+      "grasp_strategy": "fixed_pose",
+      "mcnemar_exact_p_two_sided": 0.00022125244140625,
+      "mcnemar_holm_adjusted_p": 0.00376129150390625
+    },
+    {
+      "pair_count": 20,
+      "raw_successes": 18,
+      "filtered_successes": 20,
+      "both_success": 18,
+      "both_fail": 0,
+      "filter_only_success": 2,
+      "raw_only_success": 0,
+      "success_rate_difference_ci95": [
+        0.0,
+        0.25
+      ],
+      "methods": {
+        "raw": {
+          "successes": 18,
+          "attempts": 20,
+          "success_rate": 0.9,
+          "unique_localization_cases": 20,
+          "final_position_rmse_m": 0.01050684461446103,
+          "execution_target_rmse_m": 0.01050684461446103,
+          "failures": {
+            "not_lifted_enough": 1,
+            "object_dropped_to_low_height": 1
+          },
+          "success_rate_wilson_ci95": [
+            0.6989663547715128,
+            0.9721335187862319
+          ]
+        },
+        "relative_kalman": {
+          "successes": 20,
+          "attempts": 20,
+          "success_rate": 1.0,
+          "unique_localization_cases": 20,
+          "final_position_rmse_m": 0.008381088052502862,
+          "execution_target_rmse_m": 0.008381088052502862,
+          "failures": {},
+          "success_rate_wilson_ci95": [
+            0.8388748419471806,
+            1.0
+          ]
+        }
+      },
+      "success_rate_difference": 0.1,
+      "experiment": "relative_kalman_large_square",
+      "scenario": "center_square",
+      "sensor_xy_std_m": 0.005,
+      "motion_xyz_std_m": 0.0,
+      "grasp_strategy": "geometry_candidate",
+      "mcnemar_exact_p_two_sided": 0.5,
+      "mcnemar_holm_adjusted_p": 1.0
+    },
+    {
+      "pair_count": 20,
+      "raw_successes": 16,
+      "filtered_successes": 18,
+      "both_success": 16,
+      "both_fail": 2,
+      "filter_only_success": 2,
+      "raw_only_success": 0,
+      "success_rate_difference_ci95": [
+        0.0,
+        0.25
+      ],
+      "methods": {
+        "raw": {
+          "successes": 16,
+          "attempts": 20,
+          "success_rate": 0.8,
+          "unique_localization_cases": 20,
+          "final_position_rmse_m": 0.01050684461446103,
+          "execution_target_rmse_m": 0.010507178692504006,
+          "failures": {
+            "not_lifted_enough": 1,
+            "object_dropped_after_lift": 1,
+            "forbidden_collision": 2
+          },
+          "success_rate_wilson_ci95": [
+            0.5839825677481064,
+            0.919342337420202
+          ]
+        },
+        "relative_kalman": {
+          "successes": 18,
+          "attempts": 20,
+          "success_rate": 0.9,
+          "unique_localization_cases": 20,
+          "final_position_rmse_m": 0.008381088052502862,
+          "execution_target_rmse_m": 0.00900136668457841,
+          "failures": {
+            "forbidden_collision": 2
+          },
+          "success_rate_wilson_ci95": [
+            0.6989663547715128,
+            0.9721335187862319
+          ]
+        }
+      },
+      "success_rate_difference": 0.1,
+      "experiment": "relative_kalman_large_square",
+      "scenario": "center_square",
+      "sensor_xy_std_m": 0.005,
+      "motion_xyz_std_m": 0.003,
+      "grasp_strategy": "geometry_candidate",
+      "mcnemar_exact_p_two_sided": 0.5,
+      "mcnemar_holm_adjusted_p": 1.0
+    },
+    {
+      "pair_count": 20,
+      "raw_successes": 13,
+      "filtered_successes": 19,
+      "both_success": 12,
+      "both_fail": 0,
+      "filter_only_success": 7,
+      "raw_only_success": 1,
+      "success_rate_difference_ci95": [
+        0.05,
+        0.55
+      ],
+      "methods": {
+        "raw": {
+          "successes": 13,
+          "attempts": 20,
+          "success_rate": 0.65,
+          "unique_localization_cases": 20,
+          "final_position_rmse_m": 0.016458354781857372,
+          "execution_target_rmse_m": 0.016458354781857372,
+          "failures": {
+            "not_lifted_enough": 6,
+            "object_dropped_after_lift": 1
+          },
+          "success_rate_wilson_ci95": [
+            0.43285427668523624,
+            0.818808175898918
+          ]
+        },
+        "relative_kalman": {
+          "successes": 19,
+          "attempts": 20,
+          "success_rate": 0.95,
+          "unique_localization_cases": 20,
+          "final_position_rmse_m": 0.009179679882896325,
+          "execution_target_rmse_m": 0.009179679882896325,
+          "failures": {
+            "object_dropped_after_lift": 1
+          },
+          "success_rate_wilson_ci95": [
+            0.763868806553258,
+            0.9911185511992047
+          ]
+        }
+      },
+      "success_rate_difference": 0.3,
+      "experiment": "relative_kalman_large_square",
+      "scenario": "center_square",
+      "sensor_xy_std_m": 0.01,
+      "motion_xyz_std_m": 0.0,
+      "grasp_strategy": "geometry_candidate",
+      "mcnemar_exact_p_two_sided": 0.0703125,
+      "mcnemar_holm_adjusted_p": 1.0
+    },
+    {
+      "pair_count": 20,
+      "raw_successes": 13,
+      "filtered_successes": 15,
+      "both_success": 11,
+      "both_fail": 3,
+      "filter_only_success": 4,
+      "raw_only_success": 2,
+      "success_rate_difference_ci95": [
+        -0.15,
+        0.35
+      ],
+      "methods": {
+        "raw": {
+          "successes": 13,
+          "attempts": 20,
+          "success_rate": 0.65,
+          "unique_localization_cases": 20,
+          "final_position_rmse_m": 0.016458354781857372,
+          "execution_target_rmse_m": 0.016001940814884128,
+          "failures": {
+            "object_dropped_to_low_height": 2,
+            "not_lifted_enough": 5
+          },
+          "success_rate_wilson_ci95": [
+            0.43285427668523624,
+            0.818808175898918
+          ]
+        },
+        "relative_kalman": {
+          "successes": 15,
+          "attempts": 20,
+          "success_rate": 0.75,
+          "unique_localization_cases": 20,
+          "final_position_rmse_m": 0.009179679882896325,
+          "execution_target_rmse_m": 0.00953944863790981,
+          "failures": {
+            "object_dropped_after_lift": 2,
+            "forbidden_collision": 3
+          },
+          "success_rate_wilson_ci95": [
+            0.531299122381256,
+            0.8881382985923343
+          ]
+        }
+      },
+      "success_rate_difference": 0.1,
+      "experiment": "relative_kalman_large_square",
+      "scenario": "center_square",
+      "sensor_xy_std_m": 0.01,
+      "motion_xyz_std_m": 0.003,
+      "grasp_strategy": "geometry_candidate",
+      "mcnemar_exact_p_two_sided": 0.6875,
+      "mcnemar_holm_adjusted_p": 1.0
+    },
+    {
+      "pair_count": 20,
+      "raw_successes": 19,
+      "filtered_successes": 20,
+      "both_success": 19,
+      "both_fail": 0,
+      "filter_only_success": 1,
+      "raw_only_success": 0,
+      "success_rate_difference_ci95": [
+        0.0,
+        0.15
+      ],
+      "methods": {
+        "raw": {
+          "successes": 19,
+          "attempts": 20,
+          "success_rate": 0.95,
+          "unique_localization_cases": 20,
+          "final_position_rmse_m": 0.007974774706991724,
+          "execution_target_rmse_m": 0.007974774706991724,
+          "failures": {
+            "forbidden_collision": 1
+          },
+          "success_rate_wilson_ci95": [
+            0.763868806553258,
+            0.9911185511992047
+          ]
+        },
+        "relative_kalman": {
+          "successes": 20,
+          "attempts": 20,
+          "success_rate": 1.0,
+          "unique_localization_cases": 20,
+          "final_position_rmse_m": 0.004934260126275855,
+          "execution_target_rmse_m": 0.004934260126275855,
+          "failures": {},
+          "success_rate_wilson_ci95": [
+            0.8388748419471806,
+            1.0
+          ]
+        }
+      },
+      "success_rate_difference": 0.05,
+      "experiment": "relative_kalman_large_rectangle",
+      "scenario": "rotated_rectangle",
+      "sensor_xy_std_m": 0.005,
+      "motion_xyz_std_m": 0.0,
+      "grasp_strategy": "geometry_candidate",
+      "mcnemar_exact_p_two_sided": 1.0,
+      "mcnemar_holm_adjusted_p": 1.0
+    },
+    {
+      "pair_count": 20,
+      "raw_successes": 15,
+      "filtered_successes": 18,
+      "both_success": 15,
+      "both_fail": 2,
+      "filter_only_success": 3,
+      "raw_only_success": 0,
+      "success_rate_difference_ci95": [
+        0.0,
+        0.3
+      ],
+      "methods": {
+        "raw": {
+          "successes": 15,
+          "attempts": 20,
+          "success_rate": 0.75,
+          "unique_localization_cases": 20,
+          "final_position_rmse_m": 0.007974774706991724,
+          "execution_target_rmse_m": 0.008552169797280327,
+          "failures": {
+            "forbidden_collision": 5
+          },
+          "success_rate_wilson_ci95": [
+            0.531299122381256,
+            0.8881382985923343
+          ]
+        },
+        "relative_kalman": {
+          "successes": 18,
+          "attempts": 20,
+          "success_rate": 0.9,
+          "unique_localization_cases": 20,
+          "final_position_rmse_m": 0.004934260126275855,
+          "execution_target_rmse_m": 0.006294668915968039,
+          "failures": {
+            "forbidden_collision": 2
+          },
+          "success_rate_wilson_ci95": [
+            0.6989663547715128,
+            0.9721335187862319
+          ]
+        }
+      },
+      "success_rate_difference": 0.15,
+      "experiment": "relative_kalman_large_rectangle",
+      "scenario": "rotated_rectangle",
+      "sensor_xy_std_m": 0.005,
+      "motion_xyz_std_m": 0.003,
+      "grasp_strategy": "geometry_candidate",
+      "mcnemar_exact_p_two_sided": 0.25,
+      "mcnemar_holm_adjusted_p": 1.0
+    },
+    {
+      "pair_count": 20,
+      "raw_successes": 16,
+      "filtered_successes": 20,
+      "both_success": 16,
+      "both_fail": 0,
+      "filter_only_success": 4,
+      "raw_only_success": 0,
+      "success_rate_difference_ci95": [
+        0.05,
+        0.4
+      ],
+      "methods": {
+        "raw": {
+          "successes": 16,
+          "attempts": 20,
+          "success_rate": 0.8,
+          "unique_localization_cases": 20,
+          "final_position_rmse_m": 0.01438723427194478,
+          "execution_target_rmse_m": 0.01438723427194478,
+          "failures": {
+            "forbidden_collision": 4
+          },
+          "success_rate_wilson_ci95": [
+            0.5839825677481064,
+            0.919342337420202
+          ]
+        },
+        "relative_kalman": {
+          "successes": 20,
+          "attempts": 20,
+          "success_rate": 1.0,
+          "unique_localization_cases": 20,
+          "final_position_rmse_m": 0.006597968055956976,
+          "execution_target_rmse_m": 0.006597968055956976,
+          "failures": {},
+          "success_rate_wilson_ci95": [
+            0.8388748419471806,
+            1.0
+          ]
+        }
+      },
+      "success_rate_difference": 0.2,
+      "experiment": "relative_kalman_large_rectangle",
+      "scenario": "rotated_rectangle",
+      "sensor_xy_std_m": 0.01,
+      "motion_xyz_std_m": 0.0,
+      "grasp_strategy": "geometry_candidate",
+      "mcnemar_exact_p_two_sided": 0.125,
+      "mcnemar_holm_adjusted_p": 1.0
+    },
+    {
+      "pair_count": 20,
+      "raw_successes": 14,
+      "filtered_successes": 17,
+      "both_success": 13,
+      "both_fail": 2,
+      "filter_only_success": 4,
+      "raw_only_success": 1,
+      "success_rate_difference_ci95": [
+        -0.05,
+        0.35
+      ],
+      "methods": {
+        "raw": {
+          "successes": 14,
+          "attempts": 20,
+          "success_rate": 0.7,
+          "unique_localization_cases": 20,
+          "final_position_rmse_m": 0.01438723427194478,
+          "execution_target_rmse_m": 0.014489846625711313,
+          "failures": {
+            "forbidden_collision": 6
+          },
+          "success_rate_wilson_ci95": [
+            0.4810271816464765,
+            0.8545227551323956
+          ]
+        },
+        "relative_kalman": {
+          "successes": 17,
+          "attempts": 20,
+          "success_rate": 0.85,
+          "unique_localization_cases": 20,
+          "final_position_rmse_m": 0.006597968055956976,
+          "execution_target_rmse_m": 0.007613346308658433,
+          "failures": {
+            "forbidden_collision": 3
+          },
+          "success_rate_wilson_ci95": [
+            0.6395811352592431,
+            0.9476312541037835
+          ]
+        }
+      },
+      "success_rate_difference": 0.15,
+      "experiment": "relative_kalman_large_rectangle",
+      "scenario": "rotated_rectangle",
+      "sensor_xy_std_m": 0.01,
+      "motion_xyz_std_m": 0.003,
+      "grasp_strategy": "geometry_candidate",
+      "mcnemar_exact_p_two_sided": 0.375,
+      "mcnemar_holm_adjusted_p": 1.0
+    },
+    {
+      "pair_count": 20,
+      "raw_successes": 0,
+      "filtered_successes": 0,
+      "both_success": 0,
+      "both_fail": 20,
+      "filter_only_success": 0,
+      "raw_only_success": 0,
+      "success_rate_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "methods": {
+        "raw": {
+          "successes": 0,
+          "attempts": 20,
+          "success_rate": 0.0,
+          "unique_localization_cases": 20,
+          "final_position_rmse_m": 0.012134611877903462,
+          "execution_target_rmse_m": 0.012134611877903462,
+          "failures": {
+            "not_lifted_enough": 20
+          },
+          "success_rate_wilson_ci95": [
+            0.0,
+            0.16112515805281938
+          ]
+        },
+        "relative_kalman": {
+          "successes": 0,
+          "attempts": 20,
+          "success_rate": 0.0,
+          "unique_localization_cases": 20,
+          "final_position_rmse_m": 0.010712867402762635,
+          "execution_target_rmse_m": 0.010712867402762635,
+          "failures": {
+            "not_lifted_enough": 20
+          },
+          "success_rate_wilson_ci95": [
+            0.0,
+            0.16112515805281938
+          ]
+        }
+      },
+      "success_rate_difference": 0.0,
+      "experiment": "relative_kalman_large_distractor",
+      "scenario": "nearby_green_distractor",
+      "sensor_xy_std_m": 0.005,
+      "motion_xyz_std_m": 0.0,
+      "grasp_strategy": "geometry_candidate",
+      "mcnemar_exact_p_two_sided": 1.0,
+      "mcnemar_holm_adjusted_p": 1.0
+    },
+    {
+      "pair_count": 20,
+      "raw_successes": 0,
+      "filtered_successes": 0,
+      "both_success": 0,
+      "both_fail": 20,
+      "filter_only_success": 0,
+      "raw_only_success": 0,
+      "success_rate_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "methods": {
+        "raw": {
+          "successes": 0,
+          "attempts": 20,
+          "success_rate": 0.0,
+          "unique_localization_cases": 20,
+          "final_position_rmse_m": 0.012134611877903462,
+          "execution_target_rmse_m": 0.013172602305481755,
+          "failures": {
+            "not_lifted_enough": 20
+          },
+          "success_rate_wilson_ci95": [
+            0.0,
+            0.16112515805281938
+          ]
+        },
+        "relative_kalman": {
+          "successes": 0,
+          "attempts": 20,
+          "success_rate": 0.0,
+          "unique_localization_cases": 20,
+          "final_position_rmse_m": 0.010712867402762635,
+          "execution_target_rmse_m": 0.01209163173034521,
+          "failures": {
+            "not_lifted_enough": 20
+          },
+          "success_rate_wilson_ci95": [
+            0.0,
+            0.16112515805281938
+          ]
+        }
+      },
+      "success_rate_difference": 0.0,
+      "experiment": "relative_kalman_large_distractor",
+      "scenario": "nearby_green_distractor",
+      "sensor_xy_std_m": 0.005,
+      "motion_xyz_std_m": 0.003,
+      "grasp_strategy": "geometry_candidate",
+      "mcnemar_exact_p_two_sided": 1.0,
+      "mcnemar_holm_adjusted_p": 1.0
+    },
+    {
+      "pair_count": 20,
+      "raw_successes": 0,
+      "filtered_successes": 0,
+      "both_success": 0,
+      "both_fail": 20,
+      "filter_only_success": 0,
+      "raw_only_success": 0,
+      "success_rate_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "methods": {
+        "raw": {
+          "successes": 0,
+          "attempts": 20,
+          "success_rate": 0.0,
+          "unique_localization_cases": 20,
+          "final_position_rmse_m": 0.016192346787538805,
+          "execution_target_rmse_m": 0.016192346787538805,
+          "failures": {
+            "not_lifted_enough": 20
+          },
+          "success_rate_wilson_ci95": [
+            0.0,
+            0.16112515805281938
+          ]
+        },
+        "relative_kalman": {
+          "successes": 0,
+          "attempts": 20,
+          "success_rate": 0.0,
+          "unique_localization_cases": 20,
+          "final_position_rmse_m": 0.011321119226140947,
+          "execution_target_rmse_m": 0.011321119226140947,
+          "failures": {
+            "not_lifted_enough": 20
+          },
+          "success_rate_wilson_ci95": [
+            0.0,
+            0.16112515805281938
+          ]
+        }
+      },
+      "success_rate_difference": 0.0,
+      "experiment": "relative_kalman_large_distractor",
+      "scenario": "nearby_green_distractor",
+      "sensor_xy_std_m": 0.01,
+      "motion_xyz_std_m": 0.0,
+      "grasp_strategy": "geometry_candidate",
+      "mcnemar_exact_p_two_sided": 1.0,
+      "mcnemar_holm_adjusted_p": 1.0
+    },
+    {
+      "pair_count": 20,
+      "raw_successes": 0,
+      "filtered_successes": 0,
+      "both_success": 0,
+      "both_fail": 20,
+      "filter_only_success": 0,
+      "raw_only_success": 0,
+      "success_rate_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "methods": {
+        "raw": {
+          "successes": 0,
+          "attempts": 20,
+          "success_rate": 0.0,
+          "unique_localization_cases": 20,
+          "final_position_rmse_m": 0.016192346787538805,
+          "execution_target_rmse_m": 0.016945126427568954,
+          "failures": {
+            "not_lifted_enough": 20
+          },
+          "success_rate_wilson_ci95": [
+            0.0,
+            0.16112515805281938
+          ]
+        },
+        "relative_kalman": {
+          "successes": 0,
+          "attempts": 20,
+          "success_rate": 0.0,
+          "unique_localization_cases": 20,
+          "final_position_rmse_m": 0.011321119226140947,
+          "execution_target_rmse_m": 0.012785136814874308,
+          "failures": {
+            "not_lifted_enough": 20
+          },
+          "success_rate_wilson_ci95": [
+            0.0,
+            0.16112515805281938
+          ]
+        }
+      },
+      "success_rate_difference": 0.0,
+      "experiment": "relative_kalman_large_distractor",
+      "scenario": "nearby_green_distractor",
+      "sensor_xy_std_m": 0.01,
+      "motion_xyz_std_m": 0.003,
+      "grasp_strategy": "geometry_candidate",
+      "mcnemar_exact_p_two_sided": 1.0,
+      "mcnemar_holm_adjusted_p": 1.0
+    }
+  ],
+  "limitations_zh": [
+    "运动噪声是独立的末端执行目标偏移近似，尚未验证运动途中通过视觉反馈纠偏。",
+    "相机外参视为准确，目标中心高度由已知桌面和物体高度确定。",
+    "滤波协方差描述假定的随机误差，未覆盖固定的视觉定位偏差。",
+    "带绿色干扰物场景中两种方法均为0/80，均因未达到抬升要求失败；不能把其他场景的提升推广到这一场景。"
+  ],
+  "plan_path": "results/large_validation/protocol/validation_plan.json"
+}

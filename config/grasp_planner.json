@@ -1,0 +1,14 @@
+{
+  "gripper_max_opening_m": 0.08,
+  "minimum_object_width_m": 0.015,
+  "finger_clearance_m": 0.005,
+  "position_uncertainty_margin_m": 0.003,
+  "tool_site_offset_above_center_m": 0.11,
+  "pregrasp_clearance_m": 0.1,
+  "center_offset_fractions": [
+    0.0,
+    -0.2,
+    0.2
+  ],
+  "symmetric_ratio_tolerance": 1.15
+}

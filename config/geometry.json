@@ -1,0 +1,8 @@
+{
+  "table_surface_exclusion_m": 0.003,
+  "top_surface_band_m": 0.012,
+  "minimum_target_points": 25,
+  "minimum_orientation_aspect_ratio": 1.5,
+  "trim_percentile": 2.0,
+  "known_object_height_m": 0.05
+}

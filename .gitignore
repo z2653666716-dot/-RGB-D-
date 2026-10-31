@@ -1,0 +1,12 @@
+# 本机环境、临时运行结果和 Python 缓存。
+robot_env/
+sam_env/
+.venv/
+work/
+outputs/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+
+# 模型按 README 从固定上游提交下载；不重复提交网格文件和嵌套 Git 历史。
+assets/third_party/mujoco_menagerie/

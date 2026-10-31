@@ -1,0 +1,16 @@
+{
+  "seed": 20261031,
+  "sample_period_seconds": 0.1,
+  "sample_count": 50,
+  "position_noise_std_m": 0.01,
+  "ema": {
+    "alpha": 0.25
+  },
+  "kalman": {
+    "measurement_noise_std_m": 0.01,
+    "process_noise_spectral_density_m2_s3": 0.02,
+    "initial_position_std_m": 0.05,
+    "initial_velocity_std_m_s": 0.5,
+    "maximum_measurement_age_seconds": 0.5
+  }
+}

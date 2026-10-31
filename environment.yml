@@ -1,0 +1,15 @@
+# Windows 上的独立 Conda 环境。打开项目根目录后运行：
+# conda env create --prefix .\robot_env --file environment.yml
+# 已存在该环境时，更新依赖运行：conda env update --prefix .\robot_env --file environment.yml
+#
+# MuJoCo 官方 Python wheel 和其余直接依赖固定在 requirements.txt，
+# 避免平台包与官方接口版本不一致。
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.11.18
+  - numpy=1.26.4
+  - pip=26.2.2
+  - pip:
+      - -r requirements.txt
